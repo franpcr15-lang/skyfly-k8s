@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: skyfly-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: skyfly
+  template:
+    metadata:
+      labels:
+        app: skyfly
+    spec:
+      containers:
+      - name: skyfly
+        image: europe-southwest1-docker.pkg.dev/tfg-k8s-franklin/proyecto-asir-repo/skyfly:v1
+        ports:
+        - containerPort: 8080
