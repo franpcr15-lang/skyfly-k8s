@@ -1,0 +1,10 @@
+# Redirects para Netlify - UD DUFFTOWN
+
+# Página 404 personalizada
+/* /404.html 404
+
+# Redirigir www a sin www (opcional, quita el comentario si lo necesitas)
+# https://www.uddufftown.netlify.app/* https://uddufftown.netlify.app/:splat 301!
+
+# Forzar HTTPS (Netlify lo hace automáticamente, pero por si acaso)
+http://uddufftown.netlify.app/* https://uddufftown.netlify.app/:splat 301!

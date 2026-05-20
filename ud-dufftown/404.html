@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="robots" content="noindex, nofollow" />
+<title>404 - Página no encontrada | UD DUFFTOWN</title>
+
+<!-- FAVICON -->
+<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="192x192" href="images/android-chrome-192x192.png">
+<link rel="icon" type="image/png" sizes="512x512" href="images/android-chrome-512x512.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css" />
+<style>
+.error-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--green-900) 0%, var(--green-700) 100%);
+  padding: 24px;
+  position: relative;
+  overflow: hidden;
+}
+
+.error-page::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    repeating-linear-gradient(90deg, transparent, transparent 50px, rgba(255,255,255,0.02) 50px, rgba(255,255,255,0.02) 100px);
+  pointer-events: none;
+}
+
+.error-container {
+  max-width: 600px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.error-logo {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 32px;
+  filter: drop-shadow(0 8px 24px rgba(0, 0, 0, 0.3));
+}
+
+.error-code {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(80px, 15vw, 180px);
+  color: var(--gold-400);
+  line-height: 1;
+  margin: 0 0 16px;
+  text-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  letter-spacing: 4px;
+}
+
+.error-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(28px, 5vw, 42px);
+  color: var(--white);
+  margin: 0 0 16px;
+  letter-spacing: 2px;
+}
+
+.error-message {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+.error-actions {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.error-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 32px;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  font-family: 'Bebas Neue', sans-serif;
+  letter-spacing: 1px;
+  font-size: 18px;
+}
+
+.error-btn-primary {
+  background: var(--gold-400);
+  color: var(--green-900);
+  box-shadow: 0 4px 16px rgba(244, 207, 90, 0.3);
+}
+
+.error-btn-primary:hover {
+  background: var(--gold-500);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(244, 207, 90, 0.4);
+}
+
+.error-btn-secondary {
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--white);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+}
+
+.error-btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.5);
+  transform: translateY(-2px);
+}
+
+.error-suggestions {
+  margin-top: 48px;
+  padding-top: 32px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.error-suggestions h3 {
+  color: var(--gold-300);
+  font-size: 16px;
+  margin-bottom: 16px;
+  font-weight: 600;
+}
+
+.error-links {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.error-links a {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+.error-links a:hover {
+  color: var(--gold-300);
+}
+
+@media (max-width: 480px) {
+  .error-code {
+    font-size: 100px;
+  }
+  .error-btn {
+    padding: 12px 24px;
+    font-size: 16px;
+  }
+  .error-actions {
+    flex-direction: column;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="error-page">
+  <div class="error-container">
+    
+    <!-- Logo del club -->
+    <svg class="error-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+      <style>.a{opacity:1;fill:#f9faf9}.b{opacity:1;fill:#063714}.c{opacity:.98;fill:#267837}</style>
+      <path fill-rule="evenodd" class="a" d="m233 49l51 1 33 9 22 10 44 32 20 22 10 16-4 2-2-2-20-27-23-21-26-17-36-14-15-4-16-2-38-1zm-125 63l19-20 27-19 46-19 24-4h4l1 4-5 1-7 1-10 2-22 6-31 15-24 17-20 19zm164-54l16 2 14 4 21 7 33 19 34 31 14 19 23 43 11 47 1 10v23l-1 6v8l-11 44-13 28-19 28-25 25-28 19-34 15-37 8h-41l-37-8-36-16-32-23-24-26-24-40-11-32-5-32 1-35v-5l4-22 11-32 17-31 16-21 19-19 23-17 22-12 33-11 10-2 9-2z"/>
+      <path fill-rule="evenodd" class="b" d="m187 40l21-4 42 2 10-4h32l28 8-1-5 29 13-1 6 39 26 38 43 26 52 10 45 6-2v58l-3-6-2-46v50l-4 22-9 23-5 2v8l-8 11h-8l2-7 4-9 8-26 4-18 1-9 1-4v-27l-1-9-3-21-9-34-21-39-10-16-20-22-44-32-22-10-33-9-51-1h-5l-4 1-24 4-46 19-27 19-19 20-4 4-3 4-7 9-7 10-16 29-2 5-6 16-8 35-2 15v33l8 36 12 34 23 36 27 28 26 18 14 9 20 7 18 6 29 6h40l32-6 28-10 3 2-2 8-26 13-20 4 6 4-51 4h-5l-50-9-45-20-33-24-21-21-15-21h4l1-3-24-43-13-50-2-32 7-52 6-20 14-27 26-38 27-28 35-27 2-2z"/>
+      <path class="c" d="m180 37l19-7 27-4-7 5 30 3 14-4h15l-9-2 4-2 19 2 27 9 1 5-28-8h-32l-10 4-42-2-21 4 13-6-20 5z"/>
+    </svg>
+
+    <h1 class="error-code">404</h1>
+    <h2 class="error-title">¡Fuera de juego!</h2>
+    <p class="error-message">
+      Lo sentimos, la página que buscas no existe o ha sido movida.<br>
+      Parece que este balón se fue fuera del campo.
+    </p>
+
+    <div class="error-actions">
+      <a href="index.html" class="error-btn error-btn-primary">
+        ⚽ Volver al inicio
+      </a>
+      <a href="index.html#contacto" class="error-btn error-btn-secondary">
+        ✉️ Contactar
+      </a>
+    </div>
+
+    <div class="error-suggestions">
+      <h3>Enlaces útiles:</h3>
+      <div class="error-links">
+        <a href="index.html#noticias">Noticias</a>
+        <a href="index.html#historia">Historia del club</a>
+        <a href="index.html#contacto">Contacto</a>
+        <a href="politica-privacidad.html">Privacidad</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script>
+// Opcional: redirigir automáticamente después de 10 segundos
+// setTimeout(() => {
+//   window.location.href = 'index.html';
+// }, 10000);
+</script>
+
+</body>
+</html>

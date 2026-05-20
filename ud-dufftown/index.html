@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="UD DUFFTOWN - Pasión, orgullo y fútbol. Web oficial del club deportivo. Noticias, historia, plantilla, resultados y contacto del equipo." />
+<meta name="keywords" content="UD DUFFTOWN, fútbol, club deportivo, equipo de fútbol, noticias deportivas, resultados fútbol, Dufftown, deporte" />
+<meta name="author" content="UD DUFFTOWN" />
+<meta name="robots" content="index, follow" />
+<meta name="theme-color" content="#0a3d2e" />
+
+<!-- Canonical URL -->
+<link rel="canonical" href="https://uddufftown.netlify.app/" />
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://uddufftown.netlify.app/" />
+<meta property="og:title" content="UD DUFFTOWN — Pasión, orgullo y fútbol" />
+<meta property="og:description" content="Web oficial del club deportivo UD DUFFTOWN. Descubre nuestras noticias, historia, plantilla y toda la información del club." />
+<meta property="og:image" content="https://uddufftown.netlify.app/images/android-chrome-512x512.png" />
+<meta property="og:image:width" content="512" />
+<meta property="og:image:height" content="512" />
+<meta property="og:locale" content="es_ES" />
+<meta property="og:site_name" content="UD DUFFTOWN" />
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:url" content="https://uddufftown.netlify.app/" />
+<meta name="twitter:title" content="UD DUFFTOWN — Pasión, orgullo y fútbol" />
+<meta name="twitter:description" content="Web oficial del club deportivo UD DUFFTOWN. Descubre nuestras noticias, historia, plantilla y toda la información del club." />
+<meta name="twitter:image" content="https://uddufftown.netlify.app/images/android-chrome-512x512.png" />
+
+<title>UD DUFFTOWN — Pasión, orgullo y fútbol</title>
+
+<!-- ⭐ FAVICON - LOGO EN LA PESTAÑA DEL NAVEGADOR ⭐ -->
+<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="192x192" href="images/android-chrome-192x192.png">
+<link rel="icon" type="image/png" sizes="512x512" href="images/android-chrome-512x512.png">
+<link rel="manifest" href="images/site.webmanifest">
+<!-- ⭐ FIN FAVICON ⭐ -->
+
+<!-- Preload recursos críticos -->
+<link rel="preload" href="styles.css" as="style" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header" id="siteHeader">
+  <div class="container header-inner">
+    <a href="#inicio" class="brand">
+      <div class="brand-logo" aria-hidden="true">
+       
+
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" ><style>.a{opacity:1;fill:#f9faf9}.b{opacity:1;fill:#063714}.c{opacity:.98;fill:#267837}.d{opacity:1;fill:#e1f7e4}.e{opacity:1;fill:#8cc797}</style><path fill-rule="evenodd" class="a" d="m233 49l51 1 33 9 22 10 44 32 20 22 10 16-4 2-2-2-20-27-23-21-26-17-36-14-15-4-16-2-38-1zm-125 63l19-20 27-19 46-19 24-4h4l1 4-5 1-7 1-10 2-22 6-31 15-24 17-20 19zm164-54l16 2 14 4 21 7 33 19 34 31 14 19 23 43 11 47 1 10v23l-1 6v8l-11 44-13 28-19 28-25 25-28 19-34 15-37 8h-41l-37-8-36-16-32-23-24-26-24-40-11-32-5-32 1-35v-5l4-22 11-32 17-31 16-21 19-19 23-17 22-12 33-11 10-2 9-2zm-171 62l3-4 3 3-2 2zm-14 19l7-10 3 2-7 10zm-18 34l2-5 4 1-2 5zm-14 51l8-35h4l-8 35zm384-11l4-1 3 21-4 1-1-5zm-378 95l-8-36v-33h4l1 36 7 33zm382-64l4-2v22h-5v-4zm-2 31l1-3h4v1l-1 9-4-1zm-12 51l8-26h4l-8 26zm-12 24l8-16 4 1-2 7-6 9zm-142 97l43-11 40-21 37-33 2 3-24 25-43 26-28 10-32 6h-40l-29-6v-4l27 5zm-126-23l2-4 32 16v4l-20-7z"/><path fill-rule="evenodd" class="b" d="m187 40l21-4 42 2 10-4h32l28 8-1-5 29 13-1 6 39 26 38 43 26 52 10 45 6-2v58l-3-6-2-46v50l-4 22-9 23-5 2v8l-8 11h-8l2-7 4-9 8-26 4-18 1-9 1-4v-27l-1-9-3-21-9-34-21-39-10-16-20-22-44-32-22-10-33-9-51-1h-5l-4 1-24 4-46 19-27 19-19 20-4 4-3 4-7 9-7 10-16 29-2 5-6 16-8 35-2 15v33l8 36 12 34 23 36 27 28 26 18 14 9 20 7 18 6 29 6h40l32-6 28-10 3 2-2 8-26 13-20 4 6 4-51 4h-5l-50-9-45-20-33-24-21-21-15-21h4l1-3-24-43-13-50-2-32 7-52 6-20 14-27 26-38 27-28 35-27 2-2zm-10-2l3-1v2l-3 1zm47 17l5-1h3v4h-6zm48 3l-1-4 16 2 1 4zm-65 0l10-2v4l-10 2zm95 6v-4l36 14 26 17 23 21 20 27-3 1-14-19-34-31-33-19zm-243 163h3v5l-3 1zm380 13l-1-10h3l1 4v6zm0 23v-4l3 1v10l-1 5v2h-3v-8zm-211 184l-1-3h6l-1 3z"/><path class="c" d="m180 37l19-7 27-4-7 5 30 3 14-4h15l-9-2 4-2 19 2 27 9 1 5-28-8h-32l-10 4-42-2-21 4 13-6-20 5zm-148 201l2-24 12-46 13-28 16-25 16-20 26-24 28-19 32-14v2l-35 17-36 27-29 33-20 34 1 4 13-25 25-32 26-24 30-18-35 27-27 28-26 38-14 27-6 20-7 52 2 32 13 50 24 43-1 3h-4l-13-19-15-34-9-36-2-23v-4-10-1zm434-18l-6 2-10-45-26-52-38-43-39-26 1-6 38 24 41 45 23 41 11 32zm-233-167l38 1 1 4h-40v-4zm-16 3l7-1 2 3-9 2zm71 4l-1-4 15 4v4zm-178 55l20-19 24-17 31-15 22-6v4l-33 11-22 12-23 17-19 19-16 21-17 31-11 32-4 22h-3v-3l8-35 6-15 2-5 15-28 7-10 8-10 2-2zm294 25l3-1 2 2 16 28 14 44 2 16v1h-3l-11-47zm-347 99l2-9v3l3-1-1 35 5 32 11 32 24 40 24 26 32 23 36 16 37 8h-3l1 3-27-5-18-6-32-16-29-21-25-27-16-25-16-39-7-33zm382 20v-19h3l1 4-1 16zm22 17l2-4 3 6-7 36-11 30-15 27-21 28-27 26-28 19-27 13-39 10-6-4 20-4 26-13 2-8-3-2 43-26 24-25 12-13 12-21 6-9h8l8-11v-8l5-2 9-23zm-228 168h38l37-8 34-15 28-19 25-25 19-28 13-28 11-44h3v4l-4 19-8 26-4 8-8 16-22 32-37 33-40 21-43 11h-43z"/><path class="d" d="m228 50v-1h5v4l-1 1h-3zm-124 66l4-4 2 3-3 4zm-10 13l7-9 4 1-8 10zm-23 39l16-29 3 2-15 28zm338-27l4-2 21 39 9 34-4 1-14-44zm-346 48l6-16 4 1-6 15zm-10 50l2-15h4v3 3l-2 9zm389-5l4-1 1 9-4 2-1-4zm-411 30v-4h1v4zm411 6v-6h5v5l-1 3h-4zm-5 30l4-19 4 1-4 18zm-288 124l-26-18-27-28-23-36-12-34h4l16 39 16 25 25 27 29 21zm276-90l4-8h4l-4 9zm-30 48l22-32 4 1-12 21-12 13zm-212 58v-4l18 6v4z"/><path class="e" d="m226 26l9-2h34l4 2-4 2 9 2h-15l-14 4-30-3zm-46 13l20-5-13 6-33 14-1 1-1 1-30 18-26 24-25 32-13 25-1-4 20-34 29-33 36-27 35-17zm44 11l4-1v1zm237 226v-50l2 46zm-20-46v-1l1 5zm-410 19v-11h1v11zm0 11v-10h1v10zm415 12l1-3-1 4zm-5 3l1-5v2zm-206 197v-1h5v1z"/><path class="a" d="m241 209l12-13 5-17-3-7 9-3 5 3 1 4-7 9-4 4-9 15-8 6z"/><path class="b" d="m252 82l-3 1 1 7-5 1v-22h13v4h-9v5h4zm19 4l2-15h6l-1 4-2 5 6 1v3l-7 2zm29 4l2-9-4-1v-4l14 4-1 4-5-1-3 9zm-108-10h7l4 4 2 11-3 4-10 3-6-16v-4zm134 9l8 1 4 6-7 14h-8l-4-4v-9zm-172 10h7l7 9v7l-10 7-11-16zm197 16l7-6 4 1-4 12 1 5-8 2 3-9 2-4-4 3-8 4 2-9zm-209 14l-10-11 1-3 12 12zm219-9l5-4 4 1-7 6zm-235 7l-2-3 3-1zm260 9l2 4-15 12-2-4 4-12-8 7-3-3 14-12 3 1v4l-4 11zm-153 79l-8 3-12-2 14-8 9-15v-5l-4-4-19 2 14-18-16-5 13-6 11 2-12-11 1-2 10-1 13 4-8-12 22 8-5-10 26 21 11 17-3 16-2 1-1-7-5-4h-7l-11 7-1-1 7-9-1-4-5-3-9 3 3 7-5 17-12 13zm26-26l4-1 1 2v10l-3 13-12 13-9 3 6-13-11 3h-3l2-3 8-6 8-6zm69 63h12l7 6 1 35-4 8-6 2-12-1-5-6v-37zm-244 50l-8-7v-42h10l1 40h5v-40h11v41l-5 8-11 1zm27-49h20l5 3 2 38-7 8h-20zm63 0h11l6 7v35l-7 7h-19l2-49zm44 0h8v42l-9 8-12-1-5-4-1-45h11l1 40 5-2v-22zm17 0h21v9h-11v10h10v9l-10 1v20h-10zm28 20l1-20h4 16v9h-10v10h9v10h-9v20h-11zm51-20v9h-6l-1 40h-11l1-40h-7l1-9zm58 36l-2 13h-10l-6-43v-6h4 5l1 7 1 12 1 8 1-5 2-15 1-7h8l1 9 1 4v6l1 3 1 3v-5l1-4 1-16h4 5v3 4l-1 4-5 38h-10l-2-13-1-11zm37 13h-9v-48l10-1 5 17 2 5v-19-3l8 1v48h-9l-4-16-3-6zm-152 103l6 3v5l-5 6h5v4h-11l1-5 7-6-1-4-7 3zm16 1l7 1-1 7-2-2-3-4zm-34 13l3 1 1-8h3l-2 10-6 1-2-3z"/><path class="c" d="m153 54h1v1h-1zm-1 1h1v1h-1zm73 16h5l1 5 1 14-3 3h-9l-5-14v-6h4l2 15 6 1zm53 4l1-4 7 3zm-26 7l1-4h4v4zm23 4l-1 6h-4l1-6zm28 6l-2 7-4-1 3-8zm43 22l7-12 2 3-4 10zm12 8l3-2 2 3-4 4zm-232 5l1-4 10 10 5-4 3-2 1 5-5 5h-6zm-16 31l1-1 3 1v1l-2 2-16 30-8 32-2-6 10-34zm280 7l2-1 18 39 5 30-3-1-10-43zm-131 24l4-4 1 1-1 2zm-43 80l-1-16h3zm201-16h9l-1 49v-48zm-1 3l1-3v3zm-254 146l-34-27-22-29-8-17 3-1 24 39 18 18 20 14zm207-28l23-30 6-14h3l-10 21-20 25zm-7 10l-23 19-21 9 41-29zm-198 19l1-2 8 4-2 2zm56 8l-2-4 3-2 8 4-6 9 6 2-1 3-11-1 5-7 3-6-3-1zm16 9l1-14h7l2 6h-3l-2-4-3 2 1 9zm37-9l-4-1 4-4 1 2zm2 2l2-1 2 2-4 5h5v4h-10l-1-3z"/><path fill-rule="evenodd" class="d" d="m352 119l4-3-2 4zm34 17l-9 8 4-11zm-153 79l8-6 1 1-8 6zm132 57l-1-12h5l-2 15zm7 17l2-11 1 11zm-152 122l2-3 3 1-3 6zm19 8l-1-9 3-2 2 4-1 8zm34-8l1-3 3 4-2 1z"/><path fill-rule="evenodd" class="e" d="m111 157l6-5-3 6zm-1 0h1v1h-1zm280 8v-3l2 2zm-302 58l-1 8h-3l2-14zm327 47l1-14h1v19zm-48 5l-1 5-1-8zm42 27v-22l3 6zm32 40h3v3l-10 20-25 34-25 24-31 20-8 1 25-15 33-31 28-34zm-82 41l10-9 2 2-9 8zm-197 19l1-3 2 2-1 2zm9 5l2-2 9 4-1 3z"/><path class="a" d="m194 83l4 1 3 11-7 1-3-8v-4zm133 10h5l2 6-4 7h-6l-2-5zm-172 10l7 3 2 8-3 2-4-2-5-8zm-33 159l5 1v29l-5 1zm58 22v8l-5 1v-31h4l1 4z"/><path class="d" d="m280 172l5 2v3l-4-1zm53 89l4 1v30l-6-1z"/><path class="e" d="m253 160l8 2-9 1z"/></svg>
+      </div>
+      <div class="brand-text">
+        <span class="brand-name">UD DUFFTOWN</span>
+        <span class="brand-tag">Club de Fútbol</span>
+      </div>
+    </a>
+
+    <!-- Menú de navegación horizontal para desktop -->
+    <nav class="desktop-nav" aria-label="Navegación principal">
+      <a href="#inicio">Inicio</a>
+      <a href="#noticias">Noticias</a>
+      <a href="#clasificacion">Clasificación</a>
+      <a href="#historia">Historia</a>
+      <a href="#destacados">Destacados</a>
+      <a href="#videos">Videos</a>
+      <a href="#partners">Partners</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+
+    <div class="header-actions">
+      <a href="#buscamos-partners" class="btn btn-primary btn-sm">Hazte partner</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Menú móvil (fuera del header para evitar conflictos de z-index) -->
+<nav class="main-nav" id="mainNav" aria-label="Menú principal">
+  <div class="mobile-menu-head">
+    <div class="mm-logo" aria-hidden="true">
+     
+      
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" ><style>.a{opacity:1;fill:#f9faf9}.b{opacity:1;fill:#063714}.c{opacity:.98;fill:#267837}.d{opacity:1;fill:#e1f7e4}.e{opacity:1;fill:#8cc797}</style><path fill-rule="evenodd" class="a" d="m233 49l51 1 33 9 22 10 44 32 20 22 10 16-4 2-2-2-20-27-23-21-26-17-36-14-15-4-16-2-38-1zm-125 63l19-20 27-19 46-19 24-4h4l1 4-5 1-7 1-10 2-22 6-31 15-24 17-20 19zm164-54l16 2 14 4 21 7 33 19 34 31 14 19 23 43 11 47 1 10v23l-1 6v8l-11 44-13 28-19 28-25 25-28 19-34 15-37 8h-41l-37-8-36-16-32-23-24-26-24-40-11-32-5-32 1-35v-5l4-22 11-32 17-31 16-21 19-19 23-17 22-12 33-11 10-2 9-2zm-171 62l3-4 3 3-2 2zm-14 19l7-10 3 2-7 10zm-18 34l2-5 4 1-2 5zm-14 51l8-35h4l-8 35zm384-11l4-1 3 21-4 1-1-5zm-378 95l-8-36v-33h4l1 36 7 33zm382-64l4-2v22h-5v-4zm-2 31l1-3h4v1l-1 9-4-1zm-12 51l8-26h4l-8 26zm-12 24l8-16 4 1-2 7-6 9zm-142 97l43-11 40-21 37-33 2 3-24 25-43 26-28 10-32 6h-40l-29-6v-4l27 5zm-126-23l2-4 32 16v4l-20-7z"/><path fill-rule="evenodd" class="b" d="m187 40l21-4 42 2 10-4h32l28 8-1-5 29 13-1 6 39 26 38 43 26 52 10 45 6-2v58l-3-6-2-46v50l-4 22-9 23-5 2v8l-8 11h-8l2-7 4-9 8-26 4-18 1-9 1-4v-27l-1-9-3-21-9-34-21-39-10-16-20-22-44-32-22-10-33-9-51-1h-5l-4 1-24 4-46 19-27 19-19 20-4 4-3 4-7 9-7 10-16 29-2 5-6 16-8 35-2 15v33l8 36 12 34 23 36 27 28 26 18 14 9 20 7 18 6 29 6h40l32-6 28-10 3 2-2 8-26 13-20 4 6 4-51 4h-5l-50-9-45-20-33-24-21-21-15-21h4l1-3-24-43-13-50-2-32 7-52 6-20 14-27 26-38 27-28 35-27 2-2zm-10-2l3-1v2l-3 1zm47 17l5-1h3v4h-6zm48 3l-1-4 16 2 1 4zm-65 0l10-2v4l-10 2zm95 6v-4l36 14 26 17 23 21 20 27-3 1-14-19-34-31-33-19zm-243 163h3v5l-3 1zm380 13l-1-10h3l1 4v6zm0 23v-4l3 1v10l-1 5v2h-3v-8zm-211 184l-1-3h6l-1 3z"/><path class="c" d="m180 37l19-7 27-4-7 5 30 3 14-4h15l-9-2 4-2 19 2 27 9 1 5-28-8h-32l-10 4-42-2-21 4 13-6-20 5zm-148 201l2-24 12-46 13-28 16-25 16-20 26-24 28-19 32-14v2l-35 17-36 27-29 33-20 34 1 4 13-25 25-32 26-24 30-18-35 27-27 28-26 38-14 27-6 20-7 52 2 32 13 50 24 43-1 3h-4l-13-19-15-34-9-36-2-23v-4-10-1zm434-18l-6 2-10-45-26-52-38-43-39-26 1-6 38 24 41 45 23 41 11 32zm-233-167l38 1 1 4h-40v-4zm-16 3l7-1 2 3-9 2zm71 4l-1-4 15 4v4zm-178 55l20-19 24-17 31-15 22-6v4l-33 11-22 12-23 17-19 19-16 21-17 31-11 32-4 22h-3v-3l8-35 6-15 2-5 15-28 7-10 8-10 2-2zm294 25l3-1 2 2 16 28 14 44 2 16v1h-3l-11-47zm-347 99l2-9v3l3-1-1 35 5 32 11 32 24 40 24 26 32 23 36 16 37 8h-3l1 3-27-5-18-6-32-16-29-21-25-27-16-25-16-39-7-33zm382 20v-19h3l1 4-1 16zm22 17l2-4 3 6-7 36-11 30-15 27-21 28-27 26-28 19-27 13-39 10-6-4 20-4 26-13 2-8-3-2 43-26 24-25 12-13 12-21 6-9h8l8-11v-8l5-2 9-23zm-228 168h38l37-8 34-15 28-19 25-25 19-28 13-28 11-44h3v4l-4 19-8 26-4 8-8 16-22 32-37 33-40 21-43 11h-43z"/><path class="d" d="m228 50v-1h5v4l-1 1h-3zm-124 66l4-4 2 3-3 4zm-10 13l7-9 4 1-8 10zm-23 39l16-29 3 2-15 28zm338-27l4-2 21 39 9 34-4 1-14-44zm-346 48l6-16 4 1-6 15zm-10 50l2-15h4v3 3l-2 9zm389-5l4-1 1 9-4 2-1-4zm-411 30v-4h1v4zm411 6v-6h5v5l-1 3h-4zm-5 30l4-19 4 1-4 18zm-288 124l-26-18-27-28-23-36-12-34h4l16 39 16 25 25 27 29 21zm276-90l4-8h4l-4 9zm-30 48l22-32 4 1-12 21-12 13zm-212 58v-4l18 6v4z"/><path class="e" d="m226 26l9-2h34l4 2-4 2 9 2h-15l-14 4-30-3zm-46 13l20-5-13 6-33 14-1 1-1 1-30 18-26 24-25 32-13 25-1-4 20-34 29-33 36-27 35-17zm44 11l4-1v1zm237 226v-50l2 46zm-20-46v-1l1 5zm-410 19v-11h1v11zm0 11v-10h1v10zm415 12l1-3-1 4zm-5 3l1-5v2zm-206 197v-1h5v1z"/><path class="a" d="m241 209l12-13 5-17-3-7 9-3 5 3 1 4-7 9-4 4-9 15-8 6z"/><path class="b" d="m252 82l-3 1 1 7-5 1v-22h13v4h-9v5h4zm19 4l2-15h6l-1 4-2 5 6 1v3l-7 2zm29 4l2-9-4-1v-4l14 4-1 4-5-1-3 9zm-108-10h7l4 4 2 11-3 4-10 3-6-16v-4zm134 9l8 1 4 6-7 14h-8l-4-4v-9zm-172 10h7l7 9v7l-10 7-11-16zm197 16l7-6 4 1-4 12 1 5-8 2 3-9 2-4-4 3-8 4 2-9zm-209 14l-10-11 1-3 12 12zm219-9l5-4 4 1-7 6zm-235 7l-2-3 3-1zm260 9l2 4-15 12-2-4 4-12-8 7-3-3 14-12 3 1v4l-4 11zm-153 79l-8 3-12-2 14-8 9-15v-5l-4-4-19 2 14-18-16-5 13-6 11 2-12-11 1-2 10-1 13 4-8-12 22 8-5-10 26 21 11 17-3 16-2 1-1-7-5-4h-7l-11 7-1-1 7-9-1-4-5-3-9 3 3 7-5 17-12 13zm26-26l4-1 1 2v10l-3 13-12 13-9 3 6-13-11 3h-3l2-3 8-6 8-6zm69 63h12l7 6 1 35-4 8-6 2-12-1-5-6v-37zm-244 50l-8-7v-42h10l1 40h5v-40h11v41l-5 8-11 1zm27-49h20l5 3 2 38-7 8h-20zm63 0h11l6 7v35l-7 7h-19l2-49zm44 0h8v42l-9 8-12-1-5-4-1-45h11l1 40 5-2v-22zm17 0h21v9h-11v10h10v9l-10 1v20h-10zm28 20l1-20h4 16v9h-10v10h9v10h-9v20h-11zm51-20v9h-6l-1 40h-11l1-40h-7l1-9zm58 36l-2 13h-10l-6-43v-6h4 5l1 7 1 12 1 8 1-5 2-15 1-7h8l1 9 1 4v6l1 3 1 3v-5l1-4 1-16h4 5v3 4l-1 4-5 38h-10l-2-13-1-11zm37 13h-9v-48l10-1 5 17 2 5v-19-3l8 1v48h-9l-4-16-3-6zm-152 103l6 3v5l-5 6h5v4h-11l1-5 7-6-1-4-7 3zm16 1l7 1-1 7-2-2-3-4zm-34 13l3 1 1-8h3l-2 10-6 1-2-3z"/><path class="c" d="m153 54h1v1h-1zm-1 1h1v1h-1zm73 16h5l1 5 1 14-3 3h-9l-5-14v-6h4l2 15 6 1zm53 4l1-4 7 3zm-26 7l1-4h4v4zm23 4l-1 6h-4l1-6zm28 6l-2 7-4-1 3-8zm43 22l7-12 2 3-4 10zm12 8l3-2 2 3-4 4zm-232 5l1-4 10 10 5-4 3-2 1 5-5 5h-6zm-16 31l1-1 3 1v1l-2 2-16 30-8 32-2-6 10-34zm280 7l2-1 18 39 5 30-3-1-10-43zm-131 24l4-4 1 1-1 2zm-43 80l-1-16h3zm201-16h9l-1 49v-48zm-1 3l1-3v3zm-254 146l-34-27-22-29-8-17 3-1 24 39 18 18 20 14zm207-28l23-30 6-14h3l-10 21-20 25zm-7 10l-23 19-21 9 41-29zm-198 19l1-2 8 4-2 2zm56 8l-2-4 3-2 8 4-6 9 6 2-1 3-11-1 5-7 3-6-3-1zm16 9l1-14h7l2 6h-3l-2-4-3 2 1 9zm37-9l-4-1 4-4 1 2zm2 2l2-1 2 2-4 5h5v4h-10l-1-3z"/><path fill-rule="evenodd" class="d" d="m352 119l4-3-2 4zm34 17l-9 8 4-11zm-153 79l8-6 1 1-8 6zm132 57l-1-12h5l-2 15zm7 17l2-11 1 11zm-152 122l2-3 3 1-3 6zm19 8l-1-9 3-2 2 4-1 8zm34-8l1-3 3 4-2 1z"/><path fill-rule="evenodd" class="e" d="m111 157l6-5-3 6zm-1 0h1v1h-1zm280 8v-3l2 2zm-302 58l-1 8h-3l2-14zm327 47l1-14h1v19zm-48 5l-1 5-1-8zm42 27v-22l3 6zm32 40h3v3l-10 20-25 34-25 24-31 20-8 1 25-15 33-31 28-34zm-82 41l10-9 2 2-9 8zm-197 19l1-3 2 2-1 2zm9 5l2-2 9 4-1 3z"/><path class="a" d="m194 83l4 1 3 11-7 1-3-8v-4zm133 10h5l2 6-4 7h-6l-2-5zm-172 10l7 3 2 8-3 2-4-2-5-8zm-33 159l5 1v29l-5 1zm58 22v8l-5 1v-31h4l1 4z"/><path class="d" d="m280 172l5 2v3l-4-1zm53 89l4 1v30l-6-1z"/><path class="e" d="m253 160l8 2-9 1z"/></svg>
+  
+    </div>
+    <div class="mm-info">
+      <span class="mm-name">UD DUFFTOWN</span>
+      <span class="mm-tag">Menú principal</span>
+    </div>
+    <button class="mm-close" id="mmClose" aria-label="Cerrar menú">×</button>
+  </div>
+
+  <ul>
+    <li><a href="#inicio" data-ic="◆">Inicio</a></li>
+    <li><a href="#noticias" data-ic="▦">Noticias</a></li>
+    <li><a href="#clasificacion" data-ic="▤">Clasificación</a></li>
+    <li><a href="#historia" data-ic="❖">Historia</a></li>
+    <li><a href="#destacados" data-ic="★">Destacados</a></li>
+    <li><a href="#videos" data-ic="▶">Videos</a></li>
+    <li><a href="#partners" data-ic="◉">Partners</a></li>
+    <li><a href="#contacto" data-ic="✉">Contacto</a></li>
+  </ul>
+
+  <div class="mobile-menu-foot">
+    <a href="#buscamos-partners" class="btn btn-primary btn-lg mm-cta">Hazte partner</a>
+    <div class="mm-socials">
+      <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm5 5.5A4.5 4.5 0 1 0 16.5 12 4.5 4.5 0 0 0 12 7.5zm0 2A2.5 2.5 0 1 1 9.5 12 2.5 2.5 0 0 1 12 9.5zM18 6a1 1 0 1 1-1 1 1 1 0 0 1 1-1z"/></svg></a>
+      <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M13.5 22v-8h2.7l.4-3.2h-3.1V8.7c0-.9.3-1.6 1.6-1.6h1.7V4.2A22.5 22.5 0 0 0 14 4c-2.6 0-4.4 1.6-4.4 4.4V10.8H7v3.2h2.6V22z"/></svg></a>
+      <a href="#" aria-label="TikTok"><svg viewBox="0 0 24 24"><path d="M16 3a5 5 0 0 0 5 5v3a8 8 0 0 1-5-1.7V16a6 6 0 1 1-6-6v3a3 3 0 1 0 3 3V3z"/></svg></a>
+      <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24"><path d="M21.6 7.2a2.5 2.5 0 0 0-1.8-1.8C18.2 5 12 5 12 5s-6.2 0-7.8.4A2.5 2.5 0 0 0 2.4 7.2 26 26 0 0 0 2 12a26 26 0 0 0 .4 4.8 2.5 2.5 0 0 0 1.8 1.8C5.8 19 12 19 12 19s6.2 0 7.8-.4a2.5 2.5 0 0 0 1.8-1.8A26 26 0 0 0 22 12a26 26 0 0 0-.4-4.8zM10 15V9l5 3z"/></svg></a>
+      <a href="#" aria-label="X / Twitter"><svg viewBox="0 0 24 24"><path d="M18.9 3H22l-7.4 8.5L23 21h-6.8l-5.3-6.7L4.7 21H1.6l7.9-9.1L1 3h6.9l4.8 6.2zM17.7 19h1.7L7.4 5H5.6z"/></svg></a>
+    </div>
+  </div>
+</nav>
+
+<div class="mobile-backdrop" id="mobileBackdrop"></div>
+
+<!-- ============ WHATSAPP FLOTANTE ============ -->
+<a href="https://wa.me/34632363849?text=Hola%2C%20me%20gustar%C3%ADa%20obtener%20más%20información%20sobre%20UD%20DUFFTOWN" 
+   class="whatsapp-float" 
+   id="whatsappBtn" 
+   target="_blank" 
+   rel="noopener noreferrer"
+   aria-label="Contactar por WhatsApp">
+  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" fill="currentColor"/>
+    <path d="M20.52 3.449C18.24 1.245 15.24 0 12.045 0 5.463 0 .104 5.334.101 11.893c0 2.096.549 4.14 1.595 5.945L0 24l6.335-1.652a12.062 12.062 0 005.713 1.447h.005c6.585 0 11.946-5.336 11.949-11.896 0-3.176-1.24-6.165-3.495-8.411l.013-.029zm-8.475 18.299c-1.774 0-3.513-.477-5.031-1.378l-.361-.214-3.741.98.998-3.648-.235-.374a9.86 9.86 0 01-1.511-5.26c.002-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.892 6.993c-.002 5.45-4.436 9.887-9.887 9.887z" fill="currentColor"/>
+  </svg>
+  <span class="whatsapp-tooltip">¿Dudas? Escríbenos</span>
+</a>
+
+<!-- ============ HERO / SLIDER ============ -->
+<section class="hero" id="inicio">
+  <div class="hero-slider" id="heroSlider">
+    <div class="slide active" style="--bg: linear-gradient(135deg,#0a3d2e 0%, #14593f 60%, #1a6b4a 100%);">
+      <!-- Agregar imagen de fondo: <img src="images/hero-bg-1.jpg" alt="Fondo del hero" class="slide-bg-photo" loading="eager"> -->
+      <div class="slide-pattern"></div>
+    </div>
+    <div class="slide" style="--bg: linear-gradient(135deg,#1a1a1a 0%, #0a3d2e 70%, #14593f 100%);">
+      <!-- Agregar imagen de fondo: <img src="images/hero-bg-2.jpg" alt="Fondo del hero" class="slide-bg-photo" loading="lazy"> -->
+      <div class="slide-pattern"></div>
+    </div>
+    <div class="slide" style="--bg: linear-gradient(135deg,#7a1414 0%, #0a3d2e 60%, #0a3d2e 100%);">
+      <!-- Agregar imagen de fondo: <img src="images/hero-bg-3.jpg" alt="Fondo del hero" class="slide-bg-photo" loading="lazy"> -->
+      <div class="slide-pattern"></div>
+    </div>
+  </div>
+
+  <div class="hero-overlay"></div>
+
+  <div class="hero-content container">
+    <div class="hero-logo" aria-hidden="true">
+      
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" ><style>.a{opacity:1;fill:#f9faf9}.b{opacity:1;fill:#063714}.c{opacity:.98;fill:#267837}.d{opacity:1;fill:#e1f7e4}.e{opacity:1;fill:#8cc797}</style><path fill-rule="evenodd" class="a" d="m233 49l51 1 33 9 22 10 44 32 20 22 10 16-4 2-2-2-20-27-23-21-26-17-36-14-15-4-16-2-38-1zm-125 63l19-20 27-19 46-19 24-4h4l1 4-5 1-7 1-10 2-22 6-31 15-24 17-20 19zm164-54l16 2 14 4 21 7 33 19 34 31 14 19 23 43 11 47 1 10v23l-1 6v8l-11 44-13 28-19 28-25 25-28 19-34 15-37 8h-41l-37-8-36-16-32-23-24-26-24-40-11-32-5-32 1-35v-5l4-22 11-32 17-31 16-21 19-19 23-17 22-12 33-11 10-2 9-2zm-171 62l3-4 3 3-2 2zm-14 19l7-10 3 2-7 10zm-18 34l2-5 4 1-2 5zm-14 51l8-35h4l-8 35zm384-11l4-1 3 21-4 1-1-5zm-378 95l-8-36v-33h4l1 36 7 33zm382-64l4-2v22h-5v-4zm-2 31l1-3h4v1l-1 9-4-1zm-12 51l8-26h4l-8 26zm-12 24l8-16 4 1-2 7-6 9zm-142 97l43-11 40-21 37-33 2 3-24 25-43 26-28 10-32 6h-40l-29-6v-4l27 5zm-126-23l2-4 32 16v4l-20-7z"/><path fill-rule="evenodd" class="b" d="m187 40l21-4 42 2 10-4h32l28 8-1-5 29 13-1 6 39 26 38 43 26 52 10 45 6-2v58l-3-6-2-46v50l-4 22-9 23-5 2v8l-8 11h-8l2-7 4-9 8-26 4-18 1-9 1-4v-27l-1-9-3-21-9-34-21-39-10-16-20-22-44-32-22-10-33-9-51-1h-5l-4 1-24 4-46 19-27 19-19 20-4 4-3 4-7 9-7 10-16 29-2 5-6 16-8 35-2 15v33l8 36 12 34 23 36 27 28 26 18 14 9 20 7 18 6 29 6h40l32-6 28-10 3 2-2 8-26 13-20 4 6 4-51 4h-5l-50-9-45-20-33-24-21-21-15-21h4l1-3-24-43-13-50-2-32 7-52 6-20 14-27 26-38 27-28 35-27 2-2zm-10-2l3-1v2l-3 1zm47 17l5-1h3v4h-6zm48 3l-1-4 16 2 1 4zm-65 0l10-2v4l-10 2zm95 6v-4l36 14 26 17 23 21 20 27-3 1-14-19-34-31-33-19zm-243 163h3v5l-3 1zm380 13l-1-10h3l1 4v6zm0 23v-4l3 1v10l-1 5v2h-3v-8zm-211 184l-1-3h6l-1 3z"/><path class="c" d="m180 37l19-7 27-4-7 5 30 3 14-4h15l-9-2 4-2 19 2 27 9 1 5-28-8h-32l-10 4-42-2-21 4 13-6-20 5zm-148 201l2-24 12-46 13-28 16-25 16-20 26-24 28-19 32-14v2l-35 17-36 27-29 33-20 34 1 4 13-25 25-32 26-24 30-18-35 27-27 28-26 38-14 27-6 20-7 52 2 32 13 50 24 43-1 3h-4l-13-19-15-34-9-36-2-23v-4-10-1zm434-18l-6 2-10-45-26-52-38-43-39-26 1-6 38 24 41 45 23 41 11 32zm-233-167l38 1 1 4h-40v-4zm-16 3l7-1 2 3-9 2zm71 4l-1-4 15 4v4zm-178 55l20-19 24-17 31-15 22-6v4l-33 11-22 12-23 17-19 19-16 21-17 31-11 32-4 22h-3v-3l8-35 6-15 2-5 15-28 7-10 8-10 2-2zm294 25l3-1 2 2 16 28 14 44 2 16v1h-3l-11-47zm-347 99l2-9v3l3-1-1 35 5 32 11 32 24 40 24 26 32 23 36 16 37 8h-3l1 3-27-5-18-6-32-16-29-21-25-27-16-25-16-39-7-33zm382 20v-19h3l1 4-1 16zm22 17l2-4 3 6-7 36-11 30-15 27-21 28-27 26-28 19-27 13-39 10-6-4 20-4 26-13 2-8-3-2 43-26 24-25 12-13 12-21 6-9h8l8-11v-8l5-2 9-23zm-228 168h38l37-8 34-15 28-19 25-25 19-28 13-28 11-44h3v4l-4 19-8 26-4 8-8 16-22 32-37 33-40 21-43 11h-43z"/><path class="d" d="m228 50v-1h5v4l-1 1h-3zm-124 66l4-4 2 3-3 4zm-10 13l7-9 4 1-8 10zm-23 39l16-29 3 2-15 28zm338-27l4-2 21 39 9 34-4 1-14-44zm-346 48l6-16 4 1-6 15zm-10 50l2-15h4v3 3l-2 9zm389-5l4-1 1 9-4 2-1-4zm-411 30v-4h1v4zm411 6v-6h5v5l-1 3h-4zm-5 30l4-19 4 1-4 18zm-288 124l-26-18-27-28-23-36-12-34h4l16 39 16 25 25 27 29 21zm276-90l4-8h4l-4 9zm-30 48l22-32 4 1-12 21-12 13zm-212 58v-4l18 6v4z"/><path class="e" d="m226 26l9-2h34l4 2-4 2 9 2h-15l-14 4-30-3zm-46 13l20-5-13 6-33 14-1 1-1 1-30 18-26 24-25 32-13 25-1-4 20-34 29-33 36-27 35-17zm44 11l4-1v1zm237 226v-50l2 46zm-20-46v-1l1 5zm-410 19v-11h1v11zm0 11v-10h1v10zm415 12l1-3-1 4zm-5 3l1-5v2zm-206 197v-1h5v1z"/><path class="a" d="m241 209l12-13 5-17-3-7 9-3 5 3 1 4-7 9-4 4-9 15-8 6z"/><path class="b" d="m252 82l-3 1 1 7-5 1v-22h13v4h-9v5h4zm19 4l2-15h6l-1 4-2 5 6 1v3l-7 2zm29 4l2-9-4-1v-4l14 4-1 4-5-1-3 9zm-108-10h7l4 4 2 11-3 4-10 3-6-16v-4zm134 9l8 1 4 6-7 14h-8l-4-4v-9zm-172 10h7l7 9v7l-10 7-11-16zm197 16l7-6 4 1-4 12 1 5-8 2 3-9 2-4-4 3-8 4 2-9zm-209 14l-10-11 1-3 12 12zm219-9l5-4 4 1-7 6zm-235 7l-2-3 3-1zm260 9l2 4-15 12-2-4 4-12-8 7-3-3 14-12 3 1v4l-4 11zm-153 79l-8 3-12-2 14-8 9-15v-5l-4-4-19 2 14-18-16-5 13-6 11 2-12-11 1-2 10-1 13 4-8-12 22 8-5-10 26 21 11 17-3 16-2 1-1-7-5-4h-7l-11 7-1-1 7-9-1-4-5-3-9 3 3 7-5 17-12 13zm26-26l4-1 1 2v10l-3 13-12 13-9 3 6-13-11 3h-3l2-3 8-6 8-6zm69 63h12l7 6 1 35-4 8-6 2-12-1-5-6v-37zm-244 50l-8-7v-42h10l1 40h5v-40h11v41l-5 8-11 1zm27-49h20l5 3 2 38-7 8h-20zm63 0h11l6 7v35l-7 7h-19l2-49zm44 0h8v42l-9 8-12-1-5-4-1-45h11l1 40 5-2v-22zm17 0h21v9h-11v10h10v9l-10 1v20h-10zm28 20l1-20h4 16v9h-10v10h9v10h-9v20h-11zm51-20v9h-6l-1 40h-11l1-40h-7l1-9zm58 36l-2 13h-10l-6-43v-6h4 5l1 7 1 12 1 8 1-5 2-15 1-7h8l1 9 1 4v6l1 3 1 3v-5l1-4 1-16h4 5v3 4l-1 4-5 38h-10l-2-13-1-11zm37 13h-9v-48l10-1 5 17 2 5v-19-3l8 1v48h-9l-4-16-3-6zm-152 103l6 3v5l-5 6h5v4h-11l1-5 7-6-1-4-7 3zm16 1l7 1-1 7-2-2-3-4zm-34 13l3 1 1-8h3l-2 10-6 1-2-3z"/><path class="c" d="m153 54h1v1h-1zm-1 1h1v1h-1zm73 16h5l1 5 1 14-3 3h-9l-5-14v-6h4l2 15 6 1zm53 4l1-4 7 3zm-26 7l1-4h4v4zm23 4l-1 6h-4l1-6zm28 6l-2 7-4-1 3-8zm43 22l7-12 2 3-4 10zm12 8l3-2 2 3-4 4zm-232 5l1-4 10 10 5-4 3-2 1 5-5 5h-6zm-16 31l1-1 3 1v1l-2 2-16 30-8 32-2-6 10-34zm280 7l2-1 18 39 5 30-3-1-10-43zm-131 24l4-4 1 1-1 2zm-43 80l-1-16h3zm201-16h9l-1 49v-48zm-1 3l1-3v3zm-254 146l-34-27-22-29-8-17 3-1 24 39 18 18 20 14zm207-28l23-30 6-14h3l-10 21-20 25zm-7 10l-23 19-21 9 41-29zm-198 19l1-2 8 4-2 2zm56 8l-2-4 3-2 8 4-6 9 6 2-1 3-11-1 5-7 3-6-3-1zm16 9l1-14h7l2 6h-3l-2-4-3 2 1 9zm37-9l-4-1 4-4 1 2zm2 2l2-1 2 2-4 5h5v4h-10l-1-3z"/><path fill-rule="evenodd" class="d" d="m352 119l4-3-2 4zm34 17l-9 8 4-11zm-153 79l8-6 1 1-8 6zm132 57l-1-12h5l-2 15zm7 17l2-11 1 11zm-152 122l2-3 3 1-3 6zm19 8l-1-9 3-2 2 4-1 8zm34-8l1-3 3 4-2 1z"/><path fill-rule="evenodd" class="e" d="m111 157l6-5-3 6zm-1 0h1v1h-1zm280 8v-3l2 2zm-302 58l-1 8h-3l2-14zm327 47l1-14h1v19zm-48 5l-1 5-1-8zm42 27v-22l3 6zm32 40h3v3l-10 20-25 34-25 24-31 20-8 1 25-15 33-31 28-34zm-82 41l10-9 2 2-9 8zm-197 19l1-3 2 2-1 2zm9 5l2-2 9 4-1 3z"/><path class="a" d="m194 83l4 1 3 11-7 1-3-8v-4zm133 10h5l2 6-4 7h-6l-2-5zm-172 10l7 3 2 8-3 2-4-2-5-8zm-33 159l5 1v29l-5 1zm58 22v8l-5 1v-31h4l1 4z"/><path class="d" d="m280 172l5 2v3l-4-1zm53 89l4 1v30l-6-1z"/><path class="e" d="m253 160l8 2-9 1z"/></svg>
+      
+    </div>
+
+    <p class="hero-eyebrow">Temporada 2025 / 2026</p>
+    <h1 class="hero-title">UD <span>DUFFTOWN</span></h1>
+
+    <div class="hero-slogans" id="heroSlogans">
+      <p class="slogan active">Pasión, orgullo y fútbol</p>
+      <p class="slogan">UD DUFFTOWN: más que un club</p>
+      <p class="slogan">Únete a nuestro camino</p>
+    </div>
+
+    <div class="hero-buttons">
+      <a href="#historia" class="btn btn-primary">Conoce el proyecto</a>
+      <a href="#buscamos-partners" class="btn btn-ghost">Ser partner</a>
+    </div>
+  </div>
+
+  <div class="hero-dots" id="heroDots">
+    <button class="dot active" aria-label="Slide 1"></button>
+    <button class="dot" aria-label="Slide 2"></button>
+    <button class="dot" aria-label="Slide 3"></button>
+  </div>
+
+  <div class="scroll-cue" aria-hidden="true">
+    <span></span>
+  </div>
+</section>
+
+<!-- ============ NOTICIAS ============ -->
+<section class="section" id="noticias">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">Última hora</p>
+      <h2 class="section-title">Noticias del club</h2>
+      <p class="section-sub">Todo lo que pasa en UD DUFFTOWN, contado por nosotros.</p>
+    </div>
+
+    <div class="news-grid">
+      <article class="news-card featured">
+        <div class="news-img" style="--c1:#0a3d2e;--c2:#14593f;">
+          <img src="images/hornovsdufftown.png" alt="Victoria épica UD DUFFTOWN" class="news-img-photo" loading="lazy">
+          <span class="news-cat">Copa LILICOOK</span>
+          <span class="news-img-label">Foto del club</span>
+        </div>
+        <div class="news-body">
+          <p class="news-meta"><span class="news-date">26 ABR 2026</span> · <span>Crónica</span></p>
+          <h3>Victoria épica en el último minuto frente al rival directo</h3>
+          <p>El equipo firmó un partido   contra un rival complicado y clasifica a octavos.</p>
+          <a href="noticia-1.html" class="link-arrow">Leer noticia <span>→</span></a>
+        </div>
+      </article>
+
+      <article class="news-card">
+        <div class="news-img" style="--c1:#1a1a1a;--c2:#0a3d2e;">
+          <!-- Agregar imagen: <img src="images/noticia-2.jpg" alt="Descripción" class="news-img-photo" loading="lazy"> -->
+          <span class="news-cat">Copa LILICOOK</span>
+          <span class="news-img-label">Foto del club</span>
+        </div>
+        <div class="news-body">
+          <p class="news-meta"><span class="news-date">11 ABR 2026</span> · <span>Cantera</span></p>
+          <h3>Dufftown roza la victoria ante el campeón y deja escapar el triunfo en el último suspiro</h3>
+          <a href="noticia-2.html" class="link-arrow">Leer noticia <span>→</span></a>
+        </div>
+      </article>
+
+      <article class="news-card">
+        <div class="news-img" style="--c1:#7a1414;--c2:#0a3d2e;">
+          <!-- Agregar imagen: <img src="images/noticia-3.jpg" alt="Descripción" class="news-img-photo" loading="lazy"> -->
+          <span class="news-cat">Club</span>
+          <span class="news-img-label">Foto del club</span>
+        </div>
+        <div class="news-body">
+          <p class="news-meta"><span class="news-date">22 ABR 2026</span> · <span>Institucional</span></p>
+          <h3>Nuevo acuerdo institucional para mejorar las instalaciones</h3>
+          <a href="noticia-3.html" class="link-arrow">Leer noticia <span>→</span></a>
+        </div>
+      </article>
+
+      <article class="news-card">
+        <div class="news-img" style="--c1:#c8961a;--c2:#0a3d2e;">
+          <!-- Agregar imagen: <img src="images/noticia-4.jpg" alt="Descripción" class="news-img-photo" loading="lazy"> -->
+          <span class="news-cat">Afición</span>
+          <span class="news-img-label">Foto del club</span>
+        </div>
+        <div class="news-body">
+          <p class="news-meta"><span class="news-date">19 ABR 2026</span> · <span>Comunidad</span></p>
+          <h3>Récord de asistencia en el estadio durante el último derbi</h3>
+          <a href="noticia-4.html" class="link-arrow">Leer noticia <span>→</span></a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CLASIFICACIÓN ============ -->
+<section class="section section-dark" id="clasificacion">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow eyebrow-light">Liga 2025/26</p>
+      <h2 class="section-title section-title-light">Clasificación</h2>
+      <p class="section-sub section-sub-light">La lucha por el ascenso, jornada a jornada.</p>
+    </div>
+
+    <div class="table-wrap">
+      <table class="standings">
+        <thead>
+          <tr>
+            <th>Pos</th>
+            <th class="th-team">Equipo</th>
+            <th>PJ</th>
+            <th>G</th>
+            <th>E</th>
+            <th>P</th>
+            <th>DG</th>
+            <th>Pts</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="pos pos-promo">
+            <td><span class="pos-num">1</span></td>
+            <td class="td-team"><span class="team-dot" style="background:#0a3d2e;"></span> LA WIKI</td>
+            <td>22</td><td>19</td><td>0</td><td>3</td><td class="pos">+38</td><td><strong>57</strong></td>
+          </tr>
+          <tr class="pos pos-promo">
+            <td><span class="pos-num">2</span></td>
+            <td class="td-team"><span class="team-dot" style="background:#7a1414;"></span> FC HIDRAFRESA SONNER</td>
+            <td>22</td><td>17</td><td>6</td><td>4</td><td class="pos">+25</td><td><strong>51</strong></td>
+          </tr>
+          <tr>
+            <td><span class="pos-num">3</span></td>
+            <td class="td-team"><span class="team-dot" style="background:#1a4d8c;"></span> PAJARES FS</td>
+            <td>22</td><td>15</td><td>7</td><td>5</td><td class="pos">+18</td><td><strong>46</strong></td>
+          </tr>
+          <tr>
+            <td><span class="pos-num">4</span></td>
+            <td class="td-team"><span class="team-dot" style="background:#c8961a;"></span> HORNO CASTELLANO JFC</td>
+            <td>22</td><td>13</td><td>6</td><td>7</td><td class="pos">+10</td><td><strong>40</strong></td>
+          </tr>
+          <tr>
+            <td><span class="pos-num">5</span></td>
+            <td class="td-team"><span class="team-dot" style="background:#444;"></span> AMIGUITOS FC</td>
+            <td>22</td><td>12</td><td>8</td><td>7</td><td class="pos">+6</td><td><strong>37</strong></td>
+          </tr>
+          <tr>
+            <td><span class="pos-num">6</span></td>
+            <td class="td-team"><span class="team-dot" style="background:#7d2dbb;"></span> CD GALINDUSTE FS</td>
+            <td>22</td><td>9</td><td>7</td><td>9</td><td class="pos">+2</td><td><strong>29</strong></td>
+          </tr>
+        
+          <tr>
+            <td><span class="pos-num">7</span></td>
+            <td class="td-team"><span class="team-dot" style="background:#2c8a73;"></span> UD DUFFTOWN</td>
+            <td>22</td><td>8</td><td>9</td><td>9</td><td>0</td><td><strong>26</strong></td>
+          </tr>
+          <tr>
+            <td><span class="pos-num">8</span></td>
+            <td class="td-team"><span class="team-dot" style="background:#bb5e2d;"></span> VALDELOSA FS B</td>
+            <td>22</td><td>7</td><td>8</td><td>11</td><td class="neg">-4</td><td><strong>24</strong></td>
+          </tr>
+          <tr>
+            <td><span class="pos-num">9</span></td>
+            <td class="td-team"><span class="team-dot" style="background:#555;"></span> RESIDENCIA HERNÁN CORTÉS</td>
+            <td>22</td><td>6</td><td>7</td><td>13</td><td class="neg">-9</td><td><strong>21</strong></td>
+          </tr>
+          <tr>
+            <td><span class="pos-num">10</span></td>
+            <td class="td-team"><span class="team-dot" style="background:#999;"></span> CM SAN BARTOLOME</td>
+            <td>22</td><td>9</td><td>6</td><td>17</td><td class="neg">-22</td><td><strong>18</strong></td>
+          </tr>
+           <tr class="pos pos-relegation">
+            <td><span class="pos-num">11</span></td>
+            <td class="td-team"><span class="team-dot" style="background:#999;"></span> ESCUELA DM ALDEATEJADA</td>
+            <td>22</td><td>4</td><td>6</td><td>17</td><td class="neg">-22</td><td><strong>12</strong></td>
+          </tr>
+            <tr class="pos pos-relegation">
+            <td><span class="pos-num">12</span></td>
+            <td class="td-team"><span class="team-dot" style="background:#999;"></span> CHATURROS</td>
+            <td>22</td><td>2</td><td>6</td><td>17</td><td class="neg">-22</td><td><strong>9</strong></td>
+          </tr>
+          
+        </tbody>
+      </table>
+    </div>
+
+    <div class="standings-legend">
+      <span><i class="lg lg-promo"></i> Ascenso directo</span>
+      <span><i class="lg lg-relegation"></i> Descenso</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BUSCAMOS PARTNERS ============ -->
+<section class="section section-cta" id="buscamos-partners">
+  <div class="container cta-grid">
+    <div class="cta-text">
+      <p class="eyebrow">Buscamos Partners</p>
+      <h2 class="section-title">Tu marca puede formar parte de UD DUFFTOWN</h2>
+      <p class="lead">Únete a un proyecto deportivo en crecimiento y conecta con miles de aficionados, familias y empresas locales que viven el club como propio.</p>
+
+      <ul class="benefits">
+        <li><span class="b-icon">★</span><div><strong>Visibilidad local</strong><span>Estadio, vallas, marcadores y eventos del club.</span></div></li>
+        <li><span class="b-icon">◆</span><div><strong>Redes sociales</strong><span>Contenido patrocinado en Instagram, TikTok, X y YouTube.</span></div></li>
+        <li><span class="b-icon">▲</span><div><strong>Equipaciones</strong><span>Tu logo en camisetas, pantalones, calentamientos o entrenos.</span></div></li>
+        <li><span class="b-icon">●</span><div><strong>Eventos</strong><span>Presencia en presentaciones, torneos y actos institucionales.</span></div></li>
+        <li><span class="b-icon">♦</span><div><strong>Comunidad</strong><span>Asociación directa con un club que representa una ciudad.</span></div></li>
+      </ul>
+
+      <a href="#contacto" class="btn btn-primary btn-lg">Quiero patrocinar</a>
+    </div>
+
+    <div class="cta-card">
+      <div class="cta-card-inner">
+        <p class="cta-card-eyebrow">Plan Partner Premium</p>
+        <h3>Sé parte del crecimiento.</h3>
+        <p>Diseñamos paquetes de patrocinio adaptados a empresas locales, regionales y marcas globales. Hablemos.</p>
+        <div class="cta-stats">
+          <div><strong>+15.000</strong><span>Aficionados temporada</span></div>
+          <div><strong>+250K</strong><span>Impresiones mensuales</span></div>
+          <div><strong>20+</strong><span>Eventos anuales</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EQUIPACIÓN Y ZONAS DE PATROCINIO ============ -->
+<section class="section" id="equipacion">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">Equipación oficial</p>
+      <h2 class="section-title">Zonas de patrocinio disponibles</h2>
+      <p class="section-sub">Descubre dónde puede aparecer tu marca en la equipación de UD DUFFTOWN.</p>
+    </div>
+
+    <div class="kit-wrap">
+      <!-- Camiseta -->
+      <div class="kit-piece">
+        <h3 class="kit-title">Camiseta</h3>
+
+        <div class="kit-views">
+          <!-- FRENTE camiseta -->
+          <div class="kit-view">
+            <p class="kit-view-label">Frente</p>
+            <div class="shirt shirt-front">
+              <div class="shirt-svg" aria-hidden="true">
+                <img src="images/frente.png" alt="Camiseta frente UD Dufftown">
+              </div>
+              <span class="zone z-chest" data-status="principal">
+                <span class="z-dot"></span>
+                <span class="z-label">Pecho principal · <em>Partner principal</em></span>
+              </span>
+              <span class="zone z-sleeve-r" data-status="disponible">
+                <span class="z-dot"></span>
+                <span class="z-label">Manga · <em>Disponible</em></span>
+              </span>
+              <span class="zone z-sleeve-l" data-status="premium">
+                <span class="z-dot"></span>
+                <span class="z-label">Manga · <em>Zona premium</em></span>
+              </span>
+            </div>
+          </div>
+
+          <!-- ESPALDA camiseta -->
+          <div class="kit-view">
+            <p class="kit-view-label">Espalda</p>
+            <div class="shirt shirt-back">
+              <div class="shirt-svg" aria-hidden="true">
+                <img src="images/camiseta-espalda.png" alt="Camiseta espalda UD Dufftown">
+              </div>
+              <span class="zone z-back-top" data-status="disponible">
+                <span class="z-dot"></span>
+                <span class="z-label">Espalda superior · <em>Disponible</em></span>
+              </span>
+              <span class="zone z-back-bottom" data-status="disponible">
+                <span class="z-dot"></span>
+                <span class="z-label">Espalda inferior · <em>Disponible</em></span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pantalón -->
+      <div class="kit-piece">
+        <h3 class="kit-title">Pantalón</h3>
+
+        <div class="kit-views">
+          <div class="kit-view">
+            <p class="kit-view-label">Delante</p>
+            <div class="pants pants-front">
+              <div class="pants-svg" aria-hidden="true">
+                <img src="images/pantalon-delante.png" alt="Pantalón delante UD Dufftown">
+              </div>
+              <span class="zone z-pants-front" data-status="premium">
+                <span class="z-dot"></span>
+                <span class="z-label">Pantalón delantero · <em>Zona premium</em></span>
+              </span>
+            </div>
+          </div>
+
+          <div class="kit-view">
+            <p class="kit-view-label">Detrás</p>
+            <div class="pants pants-back">
+              <div class="pants-svg" aria-hidden="true">
+                <img src="images/pantalon-atras.png" alt="Pantalón detrás UD Dufftown">
+              </div>
+              <span class="zone z-pants-back" data-status="disponible">
+                <span class="z-dot"></span>
+                <span class="z-label">Pantalón trasero · <em>Disponible</em></span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <p class="kit-note">* Las imágenes actuales son provisionales. Serán reemplazadas en cuanto el club presente oficialmente la nueva equipación para la temporada 2026/2027.</p>
+  </div>
+</section>
+
+<!-- ============ HISTORIA ============ -->
+<section class="section section-history" id="historia">
+  <div class="container history-grid">
+    <div class="history-text">
+      <p class="eyebrow">Nuestra historia</p>
+      <h2 class="section-title">Más que un club, un sentimiento.</h2>
+      <p class="lead">UD DUFFTOWN nació del sueño de un grupo de chavales que querían crear un equipo que representara a su gente, sus valores y su pasión por el fútbol. Lo que comenzó como una simple idea entre amigos, con ilusión y ganas de competir, se ha convertido con el tiempo en un proyecto deportivo en constante crecimiento.</p>
+      <p class="lead mt-4">
+  Desde su fundación, el club ha ido creciendo temporada tras temporada gracias al esfuerzo de jugadores, cuerpo técnico, aficionados y todas las personas que forman parte de esta familia. Hoy, UD DUFFTOWN sigue dando pasos hacia adelante, consolidándose cada vez más como una entidad importante dentro de su comunidad y del fútbol amateur.
+</p>
+      <p>Más que un equipo, UD DUFFTOWN representa compromiso, unión y ambición. Un club creado desde la pasión, con identidad propia y con el objetivo de seguir creciendo dentro y fuera del campo.</p>
+
+      <div class="history-stats">
+        <div><strong>+2</strong><span>Años de historia</span></div>
+        <div><strong>+50</strong><span>Jugadores formados</span></div>
+        <div><strong>1</strong><span>Sueño compartido</span></div>
+      </div>
+    </div>
+
+    <div class="history-photos">
+      <div class="ph ph-1">
+        <!-- Agregar imagen: <img src="images/historia-1.jpg" alt="Foto histórica" class="ph-photo" loading="lazy"> -->
+        <span>Foto histórica</span>
+      </div>
+      <div class="ph ph-2">
+        <!-- Agregar imagen: <img src="images/historia-2.jpg" alt="Momento del club" class="ph-photo" loading="lazy"> -->
+        <span>Momento del club</span>
+      </div>
+      <div class="ph ph-3">
+        <!-- Agregar imagen: <img src="images/historia-3.jpg" alt="Afición" class="ph-photo" loading="lazy"> -->
+        <span>Afición</span>
+      </div>
+      <div class="ph ph-4">
+        <!-- Agregar imagen: <img src="images/historia-4.jpg" alt="Trofeo" class="ph-photo" loading="lazy"> -->
+        <span>Trofeo</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DESTACADOS ============ -->
+<section class="section" id="destacados">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">Lo mejor del club</p>
+      <h2 class="section-title">Destacados</h2>
+      <p class="section-sub">Jugadores, partidos y momentos que marcan a UD DUFFTOWN.</p>
+    </div>
+
+    <div class="highlights">
+      <article class="hl-card">
+        <div class="hl-img" style="--c1:#0a3d2e;--c2:#14593f;">
+          <!-- Agregar imagen: <img src="images/destacado-1.jpg" alt="Iván Ramos" class="hl-photo" loading="lazy"> -->
+          <span class="hl-tag">Jugador del mes</span>
+        </div>
+        <div class="hl-body">
+          <h3>Iván Ramos</h3>
+          <p>Capitán del equipo y máximo goleador de la temporada con 18 dianas.</p>
+        </div>
+      </article>
+
+      <article class="hl-card">
+        <div class="hl-img" style="--c1:#7a1414;--c2:#0a3d2e;">
+          <!-- Agregar imagen: <img src="images/destacado-2.jpg" alt="3-2 vs CD Highland" class="hl-photo" loading="lazy"> -->
+          <span class="hl-tag">Partido del año</span>
+        </div>
+        <div class="hl-body">
+          <h3>3-2 vs CD Highland</h3>
+          <p>Una remontada inolvidable en el estadio que enloqueció a la afición.</p>
+        </div>
+      </article>
+
+      <article class="hl-card">
+        <div class="hl-img" style="--c1:#c8961a;--c2:#0a3d2e;">
+          <!-- Agregar imagen: <img src="images/destacado-3.jpg" alt="Liderato" class="hl-photo" loading="lazy"> -->
+          <span class="hl-tag">Logro</span>
+        </div>
+        <div class="hl-body">
+          <h3>Liderato 14 jornadas</h3>
+          <p>UD DUFFTOWN suma 14 jornadas consecutivas como líder de la categoría.</p>
+        </div>
+      </article>
+
+      <article class="hl-card">
+        <div class="hl-img" style="--c1:#1a1a1a;--c2:#0a3d2e;">
+          <!-- Agregar imagen: <img src="images/destacado-4.jpg" alt="Cantera" class="hl-photo" loading="lazy"> -->
+          <span class="hl-tag">Cantera</span>
+        </div>
+        <div class="hl-body">
+          <h3>La fábrica del club</h3>
+          <p>Más de 200 niños y niñas se forman cada año en la base del club.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ VIDEOS ============ -->
+<section class="section section-dark" id="videos">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow eyebrow-light">UD DUFFTOWN TV</p>
+      <h2 class="section-title section-title-light">Videos del club</h2>
+      <p class="section-sub section-sub-light">Resúmenes, entrenamientos, entrevistas y mejores jugadas.</p>
+    </div>
+
+    <div class="videos-grid">
+      <article class="video-card">
+        <div class="video-thumb" style="--c1:#0a3d2e;--c2:#14593f;">
+          <!-- Agregar miniatura: <img src="images/video-thumb-1.jpg" alt="Miniatura del video" class="video-thumb-photo" loading="lazy"> -->
+          <button class="video-play" aria-label="Reproducir video">
+            <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+          </button>
+          <span class="video-time">04:25</span>
+        </div>
+        <div class="video-body">
+          <p class="video-cat">Resumen</p>
+          <h3>UD DUFFTOWN 3 — 2 CD Highland</h3>
+          <p>Crónica completa del derbi.</p>
+        </div>
+      </article>
+
+      <article class="video-card">
+        <div class="video-thumb" style="--c1:#1a1a1a;--c2:#0a3d2e;">
+          <!-- Agregar miniatura: <img src="images/video-thumb-2.jpg" alt="Miniatura del video" class="video-thumb-photo" loading="lazy"> -->
+          <button class="video-play" aria-label="Reproducir video">
+            <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+          </button>
+          <span class="video-time">02:10</span>
+        </div>
+        <div class="video-body">
+          <p class="video-cat">Entrenamiento</p>
+          <h3>Última sesión antes del derbi</h3>
+          <p>Acceso exclusivo al vestuario.</p>
+        </div>
+      </article>
+
+      <article class="video-card">
+        <div class="video-thumb" style="--c1:#7a1414;--c2:#0a3d2e;">
+          <!-- Agregar miniatura: <img src="images/video-thumb-3.jpg" alt="Miniatura del video" class="video-thumb-photo" loading="lazy"> -->
+          <button class="video-play" aria-label="Reproducir video">
+            <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+          </button>
+          <span class="video-time">06:48</span>
+        </div>
+        <div class="video-body">
+          <p class="video-cat">Entrevista</p>
+          <h3>Cara a cara con el capitán</h3>
+          <p>Iván Ramos repasa la temporada.</p>
+        </div>
+      </article>
+
+      <article class="video-card">
+        <div class="video-thumb" style="--c1:#c8961a;--c2:#0a3d2e;">
+          <!-- Agregar miniatura: <img src="images/video-thumb-4.jpg" alt="Miniatura del video" class="video-thumb-photo" loading="lazy"> -->
+          <button class="video-play" aria-label="Reproducir video">
+            <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+          </button>
+          <span class="video-time">01:30</span>
+        </div>
+        <div class="video-body">
+          <p class="video-cat">Top jugadas</p>
+          <h3>Las mejores acciones del mes</h3>
+          <p>Goles, paradas y regates.</p>
+        </div>
+      </article>
+    </div>
+
+    <p class="videos-note">* Los videos podrán enlazarse a YouTube, TikTok o archivos propios del club.</p>
+  </div>
+</section>
+
+<!-- ============ NUESTROS PARTNERS ============ -->
+<section class="section" id="partners">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">Nuestros Partners</p>
+      <h2 class="section-title">Espacios disponibles</h2>
+      <p class="section-sub">Aún estamos buscando empresas que quieran crecer con nosotros. ¿Será la tuya?</p>
+    </div>
+
+    <div class="partners-grid">
+      <div class="partner-box"><span class="pb-mark">★</span><strong>Próximamente</strong><span>Tu marca aquí</span></div>
+      <div class="partner-box"><span class="pb-mark">◆</span><strong>Espacio disponible</strong><span>Sé parte de UD DUFFTOWN</span></div>
+      <div class="partner-box"><span class="pb-mark">▲</span><strong>Tu marca aquí</strong><span>Visibilidad asegurada</span></div>
+      <div class="partner-box"><span class="pb-mark">●</span><strong>Sé parte del club</strong><span>Crece con nosotros</span></div>
+      <div class="partner-box"><span class="pb-mark">♦</span><strong>Próximamente</strong><span>Patrocinador oficial</span></div>
+      <div class="partner-box"><span class="pb-mark">✦</span><strong>Espacio disponible</strong><span>Hablemos</span></div>
+    </div>
+
+    <div class="partners-cta">
+      <p>¿Quieres aparecer aquí? Contacta con nosotros y diseñamos un plan a tu medida.</p>
+      <a href="#contacto" class="btn btn-primary">Contactar con el club</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACTO ============ -->
+<section class="section section-contact" id="contacto">
+  <div class="container contact-grid">
+    <div>
+      <p class="eyebrow eyebrow-light">Contacto</p>
+      <h2 class="section-title section-title-light">Hablemos de fútbol</h2>
+      <p class="section-sub section-sub-light">¿Quieres ser partner, colaborar o simplemente saludar? Estamos a un mensaje de distancia.</p>
+      <ul class="contact-info">
+        <li><strong>Estadio:</strong> Pabellon Salamanca, Dufftown</li>
+        <li><strong>Email:</strong> dufftown@gmail.com</li>
+        <li><strong>Teléfono:</strong> +34 632 363 xx4</li>
+        <li><strong>Horario:</strong> L-V · 8:00 - 16:00</li>
+      </ul>
+    </div>
+
+    <form class="contact-form" id="contactForm" novalidate>
+      <!-- Web3Forms Access Key (cambiar si creas un nuevo formulario) -->
+      <input type="hidden" name="access_key" value="61d9a9f3-9436-4d07-88c8-f656025797e3">
+      
+      <div class="field">
+        <label for="cName">Nombre</label>
+        <input id="cName" name="name" type="text" required placeholder="Tu nombre" />
+      </div>
+      <div class="field">
+        <label for="cEmail">Email</label>
+        <input id="cEmail" name="email" type="email" required placeholder="tu@email.com" />
+      </div>
+      <div class="field">
+        <label for="cTopic">Asunto</label>
+        <select id="cTopic" name="subject">
+          <option>Quiero ser partner</option>
+          <option>Información general</option>
+          <option>Cantera</option>
+          <option>Prensa</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="cMsg">Mensaje</label>
+        <textarea id="cMsg" name="message" rows="4" required placeholder="Cuéntanos..."></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary btn-lg">Enviar mensaje</button>
+    </form>
+  </div>
+</section>
+
+<!-- Contenedor de notificaciones toast -->
+<div id="toastContainer" class="toast-container"></div>
+
+<!-- ============ BANNER DE COOKIES ============ -->
+<div class="cookie-banner" id="cookieBanner">
+  <div class="cookie-banner-content">
+    <div class="cookie-banner-header">
+      
+      <!-- ⭐ LOGO DEL CLUB - METE TU LOGO AQUÍ ⭐ -->
+      <!-- Puedes reemplazar todo este <svg> con tu propio logo usando <img src="images/logo-club.png" class="cookie-logo" alt="Logo UD DUFFTOWN"> -->
+      <img src="images/logo-dufftown.png" class="cookie-logo" alt="Logo UD DUFFTOWN">
+      <!-- ⭐ FIN DEL LOGO ⭐ -->
+      
+      <div class="cookie-banner-title">
+        <h3>🍪 Usamos cookies</h3>
+        <p>Respetamos tu privacidad</p>
+      </div>
+    </div>
+    <div class="cookie-banner-text">
+      <p>Utilizamos cookies esenciales para que el sitio funcione correctamente y cookies opcionales para analizar el tráfico y mejorar tu experiencia. Puedes elegir qué cookies aceptar.</p>
+      <a href="politica-privacidad.html" class="cookie-policy-link">Política de privacidad</a>
+    </div>
+    <div class="cookie-banner-actions">
+      <button class="btn-cookie btn-cookie-reject" id="cookieReject">Rechazar opcionales</button>
+      <button class="btn-cookie btn-cookie-config" id="cookieConfig">Configurar</button>
+      <button class="btn-cookie btn-cookie-accept" id="cookieAccept">Aceptar todas</button>
+    </div>
+  </div>
+</div>
+
+<!-- Modal de configuración de cookies -->
+<div class="cookie-modal" id="cookieModal">
+  <div class="cookie-modal-content">
+    <div class="cookie-modal-header">
+      <h3>⚙️ Configurar cookies</h3>
+      <button class="cookie-modal-close" id="cookieModalClose">×</button>
+    </div>
+    <div class="cookie-modal-body">
+      <p class="cookie-modal-intro">Elige qué tipos de cookies quieres permitir. Las cookies esenciales no se pueden desactivar.</p>
+      
+      <div class="cookie-option">
+        <div class="cookie-option-header">
+          <label class="cookie-switch">
+            <input type="checkbox" checked disabled>
+            <span class="cookie-slider"></span>
+          </label>
+          <div>
+            <h4>Cookies esenciales <span class="cookie-required">(Obligatorias)</span></h4>
+            <p>Necesarias para el funcionamiento básico del sitio web (formulario de contacto, preferencias de cookies).</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="cookie-option">
+        <div class="cookie-option-header">
+          <label class="cookie-switch">
+            <input type="checkbox" id="cookieAnalytics">
+            <span class="cookie-slider"></span>
+          </label>
+          <div>
+            <h4>Cookies analíticas</h4>
+            <p>Nos ayudan a entender cómo los visitantes interactúan con el sitio mediante estadísticas anónimas.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="cookie-option">
+        <div class="cookie-option-header">
+          <label class="cookie-switch">
+            <input type="checkbox" id="cookieMarketing">
+            <span class="cookie-slider"></span>
+          </label>
+          <div>
+            <h4>Cookies de marketing</h4>
+            <p>Utilizadas para mostrar publicidad relevante y medir la efectividad de campañas en redes sociales.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="cookie-modal-footer">
+      <button class="btn-cookie btn-cookie-save" id="cookieSave">Guardar preferencias</button>
+      <button class="btn-cookie btn-cookie-accept-all" id="cookieAcceptAll">Aceptar todas</button>
+    </div>
+  </div>
+</div>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <div class="brand-logo lg" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" ><style>.a{opacity:1;fill:#f9faf9}.b{opacity:1;fill:#063714}.c{opacity:.98;fill:#267837}.d{opacity:1;fill:#e1f7e4}.e{opacity:1;fill:#8cc797}</style><path fill-rule="evenodd" class="a" d="m233 49l51 1 33 9 22 10 44 32 20 22 10 16-4 2-2-2-20-27-23-21-26-17-36-14-15-4-16-2-38-1zm-125 63l19-20 27-19 46-19 24-4h4l1 4-5 1-7 1-10 2-22 6-31 15-24 17-20 19zm164-54l16 2 14 4 21 7 33 19 34 31 14 19 23 43 11 47 1 10v23l-1 6v8l-11 44-13 28-19 28-25 25-28 19-34 15-37 8h-41l-37-8-36-16-32-23-24-26-24-40-11-32-5-32 1-35v-5l4-22 11-32 17-31 16-21 19-19 23-17 22-12 33-11 10-2 9-2zm-171 62l3-4 3 3-2 2zm-14 19l7-10 3 2-7 10zm-18 34l2-5 4 1-2 5zm-14 51l8-35h4l-8 35zm384-11l4-1 3 21-4 1-1-5zm-378 95l-8-36v-33h4l1 36 7 33zm382-64l4-2v22h-5v-4zm-2 31l1-3h4v1l-1 9-4-1zm-12 51l8-26h4l-8 26zm-12 24l8-16 4 1-2 7-6 9zm-142 97l43-11 40-21 37-33 2 3-24 25-43 26-28 10-32 6h-40l-29-6v-4l27 5zm-126-23l2-4 32 16v4l-20-7z"/><path fill-rule="evenodd" class="b" d="m187 40l21-4 42 2 10-4h32l28 8-1-5 29 13-1 6 39 26 38 43 26 52 10 45 6-2v58l-3-6-2-46v50l-4 22-9 23-5 2v8l-8 11h-8l2-7 4-9 8-26 4-18 1-9 1-4v-27l-1-9-3-21-9-34-21-39-10-16-20-22-44-32-22-10-33-9-51-1h-5l-4 1-24 4-46 19-27 19-19 20-4 4-3 4-7 9-7 10-16 29-2 5-6 16-8 35-2 15v33l8 36 12 34 23 36 27 28 26 18 14 9 20 7 18 6 29 6h40l32-6 28-10 3 2-2 8-26 13-20 4 6 4-51 4h-5l-50-9-45-20-33-24-21-21-15-21h4l1-3-24-43-13-50-2-32 7-52 6-20 14-27 26-38 27-28 35-27 2-2zm-10-2l3-1v2l-3 1zm47 17l5-1h3v4h-6zm48 3l-1-4 16 2 1 4zm-65 0l10-2v4l-10 2zm95 6v-4l36 14 26 17 23 21 20 27-3 1-14-19-34-31-33-19zm-243 163h3v5l-3 1zm380 13l-1-10h3l1 4v6zm0 23v-4l3 1v10l-1 5v2h-3v-8zm-211 184l-1-3h6l-1 3z"/><path class="c" d="m180 37l19-7 27-4-7 5 30 3 14-4h15l-9-2 4-2 19 2 27 9 1 5-28-8h-32l-10 4-42-2-21 4 13-6-20 5zm-148 201l2-24 12-46 13-28 16-25 16-20 26-24 28-19 32-14v2l-35 17-36 27-29 33-20 34 1 4 13-25 25-32 26-24 30-18-35 27-27 28-26 38-14 27-6 20-7 52 2 32 13 50 24 43-1 3h-4l-13-19-15-34-9-36-2-23v-4-10-1zm434-18l-6 2-10-45-26-52-38-43-39-26 1-6 38 24 41 45 23 41 11 32zm-233-167l38 1 1 4h-40v-4zm-16 3l7-1 2 3-9 2zm71 4l-1-4 15 4v4zm-178 55l20-19 24-17 31-15 22-6v4l-33 11-22 12-23 17-19 19-16 21-17 31-11 32-4 22h-3v-3l8-35 6-15 2-5 15-28 7-10 8-10 2-2zm294 25l3-1 2 2 16 28 14 44 2 16v1h-3l-11-47zm-347 99l2-9v3l3-1-1 35 5 32 11 32 24 40 24 26 32 23 36 16 37 8h-3l1 3-27-5-18-6-32-16-29-21-25-27-16-25-16-39-7-33zm382 20v-19h3l1 4-1 16zm22 17l2-4 3 6-7 36-11 30-15 27-21 28-27 26-28 19-27 13-39 10-6-4 20-4 26-13 2-8-3-2 43-26 24-25 12-13 12-21 6-9h8l8-11v-8l5-2 9-23zm-228 168h38l37-8 34-15 28-19 25-25 19-28 13-28 11-44h3v4l-4 19-8 26-4 8-8 16-22 32-37 33-40 21-43 11h-43z"/><path class="d" d="m228 50v-1h5v4l-1 1h-3zm-124 66l4-4 2 3-3 4zm-10 13l7-9 4 1-8 10zm-23 39l16-29 3 2-15 28zm338-27l4-2 21 39 9 34-4 1-14-44zm-346 48l6-16 4 1-6 15zm-10 50l2-15h4v3 3l-2 9zm389-5l4-1 1 9-4 2-1-4zm-411 30v-4h1v4zm411 6v-6h5v5l-1 3h-4zm-5 30l4-19 4 1-4 18zm-288 124l-26-18-27-28-23-36-12-34h4l16 39 16 25 25 27 29 21zm276-90l4-8h4l-4 9zm-30 48l22-32 4 1-12 21-12 13zm-212 58v-4l18 6v4z"/><path class="e" d="m226 26l9-2h34l4 2-4 2 9 2h-15l-14 4-30-3zm-46 13l20-5-13 6-33 14-1 1-1 1-30 18-26 24-25 32-13 25-1-4 20-34 29-33 36-27 35-17zm44 11l4-1v1zm237 226v-50l2 46zm-20-46v-1l1 5zm-410 19v-11h1v11zm0 11v-10h1v10zm415 12l1-3-1 4zm-5 3l1-5v2zm-206 197v-1h5v1z"/><path class="a" d="m241 209l12-13 5-17-3-7 9-3 5 3 1 4-7 9-4 4-9 15-8 6z"/><path class="b" d="m252 82l-3 1 1 7-5 1v-22h13v4h-9v5h4zm19 4l2-15h6l-1 4-2 5 6 1v3l-7 2zm29 4l2-9-4-1v-4l14 4-1 4-5-1-3 9zm-108-10h7l4 4 2 11-3 4-10 3-6-16v-4zm134 9l8 1 4 6-7 14h-8l-4-4v-9zm-172 10h7l7 9v7l-10 7-11-16zm197 16l7-6 4 1-4 12 1 5-8 2 3-9 2-4-4 3-8 4 2-9zm-209 14l-10-11 1-3 12 12zm219-9l5-4 4 1-7 6zm-235 7l-2-3 3-1zm260 9l2 4-15 12-2-4 4-12-8 7-3-3 14-12 3 1v4l-4 11zm-153 79l-8 3-12-2 14-8 9-15v-5l-4-4-19 2 14-18-16-5 13-6 11 2-12-11 1-2 10-1 13 4-8-12 22 8-5-10 26 21 11 17-3 16-2 1-1-7-5-4h-7l-11 7-1-1 7-9-1-4-5-3-9 3 3 7-5 17-12 13zm26-26l4-1 1 2v10l-3 13-12 13-9 3 6-13-11 3h-3l2-3 8-6 8-6zm69 63h12l7 6 1 35-4 8-6 2-12-1-5-6v-37zm-244 50l-8-7v-42h10l1 40h5v-40h11v41l-5 8-11 1zm27-49h20l5 3 2 38-7 8h-20zm63 0h11l6 7v35l-7 7h-19l2-49zm44 0h8v42l-9 8-12-1-5-4-1-45h11l1 40 5-2v-22zm17 0h21v9h-11v10h10v9l-10 1v20h-10zm28 20l1-20h4 16v9h-10v10h9v10h-9v20h-11zm51-20v9h-6l-1 40h-11l1-40h-7l1-9zm58 36l-2 13h-10l-6-43v-6h4 5l1 7 1 12 1 8 1-5 2-15 1-7h8l1 9 1 4v6l1 3 1 3v-5l1-4 1-16h4 5v3 4l-1 4-5 38h-10l-2-13-1-11zm37 13h-9v-48l10-1 5 17 2 5v-19-3l8 1v48h-9l-4-16-3-6zm-152 103l6 3v5l-5 6h5v4h-11l1-5 7-6-1-4-7 3zm16 1l7 1-1 7-2-2-3-4zm-34 13l3 1 1-8h3l-2 10-6 1-2-3z"/><path class="c" d="m153 54h1v1h-1zm-1 1h1v1h-1zm73 16h5l1 5 1 14-3 3h-9l-5-14v-6h4l2 15 6 1zm53 4l1-4 7 3zm-26 7l1-4h4v4zm23 4l-1 6h-4l1-6zm28 6l-2 7-4-1 3-8zm43 22l7-12 2 3-4 10zm12 8l3-2 2 3-4 4zm-232 5l1-4 10 10 5-4 3-2 1 5-5 5h-6zm-16 31l1-1 3 1v1l-2 2-16 30-8 32-2-6 10-34zm280 7l2-1 18 39 5 30-3-1-10-43zm-131 24l4-4 1 1-1 2zm-43 80l-1-16h3zm201-16h9l-1 49v-48zm-1 3l1-3v3zm-254 146l-34-27-22-29-8-17 3-1 24 39 18 18 20 14zm207-28l23-30 6-14h3l-10 21-20 25zm-7 10l-23 19-21 9 41-29zm-198 19l1-2 8 4-2 2zm56 8l-2-4 3-2 8 4-6 9 6 2-1 3-11-1 5-7 3-6-3-1zm16 9l1-14h7l2 6h-3l-2-4-3 2 1 9zm37-9l-4-1 4-4 1 2zm2 2l2-1 2 2-4 5h5v4h-10l-1-3z"/><path fill-rule="evenodd" class="d" d="m352 119l4-3-2 4zm34 17l-9 8 4-11zm-153 79l8-6 1 1-8 6zm132 57l-1-12h5l-2 15zm7 17l2-11 1 11zm-152 122l2-3 3 1-3 6zm19 8l-1-9 3-2 2 4-1 8zm34-8l1-3 3 4-2 1z"/><path fill-rule="evenodd" class="e" d="m111 157l6-5-3 6zm-1 0h1v1h-1zm280 8v-3l2 2zm-302 58l-1 8h-3l2-14zm327 47l1-14h1v19zm-48 5l-1 5-1-8zm42 27v-22l3 6zm32 40h3v3l-10 20-25 34-25 24-31 20-8 1 25-15 33-31 28-34zm-82 41l10-9 2 2-9 8zm-197 19l1-3 2 2-1 2zm9 5l2-2 9 4-1 3z"/><path class="a" d="m194 83l4 1 3 11-7 1-3-8v-4zm133 10h5l2 6-4 7h-6l-2-5zm-172 10l7 3 2 8-3 2-4-2-5-8zm-33 159l5 1v29l-5 1zm58 22v8l-5 1v-31h4l1 4z"/><path class="d" d="m280 172l5 2v3l-4-1zm53 89l4 1v30l-6-1z"/><path class="e" d="m253 160l8 2-9 1z"/></svg>
+      </div>
+      <h3>UD DUFFTOWN</h3>
+      <p>Fútbol, comunidad y pasión.</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Club</h4>
+      <ul>
+        <li><a href="#historia">Nuestra historia</a></li>
+        <li><a href="#noticias">Noticias</a></li>
+        <li><a href="#clasificacion">Clasificación</a></li>
+        <li><a href="#destacados">Destacados</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Negocio</h4>
+      <ul>
+        <li><a href="#buscamos-partners">Hazte partner</a></li>
+        <li><a href="#partners">Nuestros partners</a></li>
+        <li><a href="#equipacion">Equipación</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Síguenos</h4>
+      <div class="socials">
+        <a href="#" aria-label="Instagram" class="social">
+          <svg viewBox="0 0 24 24"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm5 5.5A4.5 4.5 0 1 0 16.5 12 4.5 4.5 0 0 0 12 7.5zm0 2A2.5 2.5 0 1 1 9.5 12 2.5 2.5 0 0 1 12 9.5zM18 6a1 1 0 1 1-1 1 1 1 0 0 1 1-1z"/></svg>
+        </a>
+        <a href="#" aria-label="Facebook" class="social">
+          <svg viewBox="0 0 24 24"><path d="M13.5 22v-8h2.7l.4-3.2h-3.1V8.7c0-.9.3-1.6 1.6-1.6h1.7V4.2A22.5 22.5 0 0 0 14 4c-2.6 0-4.4 1.6-4.4 4.4V10.8H7v3.2h2.6V22z"/></svg>
+        </a>
+        <a href="#" aria-label="TikTok" class="social">
+          <svg viewBox="0 0 24 24"><path d="M16 3a5 5 0 0 0 5 5v3a8 8 0 0 1-5-1.7V16a6 6 0 1 1-6-6v3a3 3 0 1 0 3 3V3z"/></svg>
+        </a>
+        <a href="#" aria-label="YouTube" class="social">
+          <svg viewBox="0 0 24 24"><path d="M21.6 7.2a2.5 2.5 0 0 0-1.8-1.8C18.2 5 12 5 12 5s-6.2 0-7.8.4A2.5 2.5 0 0 0 2.4 7.2 26 26 0 0 0 2 12a26 26 0 0 0 .4 4.8 2.5 2.5 0 0 0 1.8 1.8C5.8 19 12 19 12 19s6.2 0 7.8-.4a2.5 2.5 0 0 0 1.8-1.8A26 26 0 0 0 22 12a26 26 0 0 0-.4-4.8zM10 15V9l5 3z"/></svg>
+        </a>
+        <a href="#" aria-label="X / Twitter" class="social">
+          <svg viewBox="0 0 24 24"><path d="M18.9 3H22l-7.4 8.5L23 21h-6.8l-5.3-6.7L4.7 21H1.6l7.9-9.1L1 3h6.9l4.8 6.2zM17.7 19h1.7L7.4 5H5.6z"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container footer-bottom-inner">
+      <p>© <span id="year"></span> UD DUFFTOWN. Todos los derechos reservados.</p>
+      <ul class="footer-legal">
+        <li><a href="aviso-legal.html">Aviso legal</a></li>
+        <li><a href="politica-privacidad.html">Política de privacidad</a></li>
+        <li><a href="#" id="cookieSettings">Configurar cookies</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="#partners">Partners</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<a href="#inicio" class="back-top" id="backTop" aria-label="Volver arriba">↑</a>
+
+<!-- Schema.org markup para SEO -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SportsOrganization",
+  "name": "UD DUFFTOWN",
+  "alternateName": "Unión Deportiva Dufftown",
+  "url": "https://uddufftown.netlify.app",
+  "logo": "https://uddufftown.netlify.app/images/android-chrome-512x512.png",
+  "description": "Club deportivo de fútbol UD DUFFTOWN. Pasión, orgullo y fútbol.",
+  "sport": "Fútbol",
+  "email": "franklin651740210@gmail.com",
+  "sameAs": [
+    "https://www.instagram.com/uddufftown",
+    "https://www.facebook.com/uddufftown",
+    "https://twitter.com/uddufftown"
+  ],
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "General Inquiries",
+    "email": "franklin651740210@gmail.com"
+  }
+}
+</script>
+
+<script src="script.js"></script>
+</body>
+</html>

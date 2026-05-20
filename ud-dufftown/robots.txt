@@ -1,0 +1,23 @@
+# robots.txt para UD DUFFTOWN
+# Permite a todos los motores de búsqueda indexar toda la web
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://uddufftown.netlify.app/sitemap.xml
+
+# Bloquear archivos innecesarios para SEO
+Disallow: /script.js
+Disallow: /styles.css
+Disallow: /*.json$
+
+# Rastreadores específicos de buscadores
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Tiempo de rastreo (crawl-delay en segundos)
+Crawl-delay: 1
